@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Team EAZ</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#090909;
+color:white;
+overflow-x:hidden;
+}
+
+body::before{
+content:'';
+position:fixed;
+width:100%;
+height:100%;
+background:
+radial-gradient(circle at top,#19ff79 0%,transparent 55%),
+radial-gradient(circle at bottom,#0f5 0%,transparent 45%);
+opacity:.08;
+z-index:-1;
+}
+
+header{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:25px 10%;
+position:fixed;
+width:100%;
+background:rgba(0,0,0,.5);
+backdrop-filter:blur(15px);
+z-index:100;
+}
+
+.logo{
+font-size:34px;
+font-weight:800;
+color:#1aff75;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:35px;
+transition:.3s;
+font-weight:500;
+}
+
+nav a:hover{
+color:#1aff75;
+}
+
+.hero{
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+padding:0 10%;
+}
+
+.hero h1{
+
+font-size:70px;
+
+font-weight:800;
+
+margin-bottom:20px;
+
+text-shadow:0 0 30px #00ff66;
+}
+
+.hero p{
+
+font-size:22px;
+
+color:#cfcfcf;
+
+margin-bottom:40px;
+}
+
+.btn{
+
+display:inline-block;
+
+padding:16px 45px;
+
+background:#18ff76;
+
+color:black;
+
+font-weight:bold;
+
+border-radius:40px;
+
+text-decoration:none;
+
+transition:.3s;
+}
+
+.btn:hover{
+
+transform:scale(1.05);
+
+box-shadow:0 0 30px #18ff76;
+}
+
+section{
+
+padding:100px 10%;
+}
+
+.title{
+
+font-size:45px;
+
+margin-bottom:50px;
+
+text-align:center;
+
+color:#1aff75;
+}
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:30px;
+}
+
+.card{
+
+background:#121212;
+
+padding:35px;
+
+border-radius:20px;
+
+border:1px solid rgba(255,255,255,.08);
+
+transition:.35s;
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+border-color:#19ff79;
+
+box-shadow:0 0 25px rgba(0,255,100,.25);
+}
+
+.card h3{
+
+margin-bottom:15px;
+
+color:#1aff75;
+}
+
+.team{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:30px;
+}
+
+.member{
+
+background:#141414;
+
+border-radius:20px;
+
+overflow:hidden;
+
+transition:.3s;
+
+text-align:center;
+}
+
+.member img{
+
+width:100%;
+
+height:250px;
+
+object-fit:cover;
+}
+
+.member:hover{
+
+transform:translateY(-8px);
+}
+
+.member h2{
+
+margin-top:20px;
+}
+
+.member p{
+
+padding-bottom:25px;
+
+color:#aaa;
+}
+
+footer{
+
+padding:40px;
+
+text-align:center;
+
+background:#0d0d0d;
+
+color:#666;
+}
+
+.discord{
+
+background:#5865F2;
+color:white;
+margin-left:15px;
+}
+
+.buttons{
+
+display:flex;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+gap:20px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:50px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+header{
+
+padding:20px;
+
+}
+
+nav{
+
+display:none;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">TEAM EAZ</div>
+
+<nav>
+
+<a href="#about">Über Uns</a>
+
+<a href="#features">Features</a>
+
+<a href="#team">Team</a>
+
+<a href="#join">Join</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div>
+
+<h1>TEAM EAZ</h1>
+
+<p>Die nächste Generation von Fortnite Content Creatorn.</p>
+
+<div class="buttons">
+
+<a class="btn" href="#join">Jetzt Bewerben</a>
+
+<a class="btn discord" href="#">Discord</a>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="title">Über Uns</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>🔥 Community</h3>
+
+<p>Eine starke Community mit aktiven Mitgliedern und täglichen Events.</p>
+
+</div>
+
+<div class="card">
+
+<h3>🎥 Content</h3>
+
+<p>TikTok, YouTube, Shorts und Livestreams gehören zu unserem Alltag.</p>
+
+</div>
+
+<div class="card">
+
+<h3>🏆 Competitive</h3>
+
+<p>Wir unterstützen sowohl Casual- als auch Competitive-Spieler.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="features">
+
+<h2 class="title">Warum Team EAZ?</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>✔ Aktive Leitung</h3>
+
+<p>Immer erreichbar und offen für neue Ideen.</p>
+
+</div>
+
+<div class="card">
+
+<h3>✔ Eigene Events</h3>
+
+<p>Turniere, Customs und Community-Abende.</p>
+
+</div>
+
+<div class="card">
+
+<h3>✔ Wachstum</h3>
+
+<p>Gemeinsam Reichweite auf TikTok, YouTube und Twitch aufbauen.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="team">
+
+<h2 class="title">Unser Team</h2>
+
+<div class="team">
+
+<div class="member">
+
+<img src="https://via.placeholder.com/400x400">
+
+<h2>EAZ Founder</h2>
+
+<p>Gründer</p>
+
+</div>
+
+<div class="member">
+
+<img src="https://via.placeholder.com/400x400">
+
+<h2>Management</h2>
+
+<p>Leitung</p>
+
+</div>
+
+<div class="member">
+
+<img src="https://via.placeholder.com/400x400">
+
+<h2>Creator</h2>
+
+<p>Content Creator</p>
+
+</div>
+
+<div class="member">
+
+<img src="https://via.placeholder.com/400x400">
+
+<h2>Player</h2>
+
+<p>Competitive</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="join">
+
+<h2 class="title">Join Team EAZ</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>📋 Voraussetzungen</h3>
+
+<p>✔ Aktiv sein<br>
+✔ Freundlich sein<br>
+✔ Motivation zeigen</p>
+
+</div>
+
+<div class="card">
+
+<h3>🚀 Bewerbung</h3>
+
+<p>Bewirb dich jetzt über unseren Discord und werde Teil von Team EAZ.</p>
+
+<a class="btn" href="#">Discord öffnen</a>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 TEAM EAZ • Alle Rechte vorbehalten.
+
+</footer>
+
+<script>
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
+
+anchor.addEventListener("click",function(e){
+
+e.preventDefault();
+
+document.querySelector(this.getAttribute("href")).scrollIntoView({
+
+behavior:"smooth"
+
+});
+
+});
+
+});
+
+</script>
+
+</body>
+</html>
